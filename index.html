@@ -437,6 +437,25 @@
             </li>
           </ul>
         </div>
+        <div class="footer-container">
+          <p class="footer-taxt-second">Subscribe</p>
+          <form class="form">
+            <label class="form-label">
+              <input
+                class="form-input"
+                type="email"
+                name="user_email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="form-btn">
+              Subscribe
+              <svg class="btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -449,6 +468,41 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-taxt">Leave your contacts and we will call you back</p>
+        <form class="form-modal" name="feedback" autocomplete="off">
+          <fieldset class="form-group">
+            <labal class="form-label-modal">
+              Name
+              <input
+                class="form-modal-input"
+                type="text"
+                name="username"
+                placeholder=""
+                autofocus
+              />
+            </labal>
+            <labal class="form-label-modal">
+              Phone
+              <input class="form-modal-input" type="tel" name="user_tel" />
+            </labal>
+            <labal class="form-label-modal">
+              Email
+              <input class="form-modal-input" type="email" name="user_email" />
+            </labal>
+            <label class="form-label-modal">
+              Comment
+              <textarea class="form-modal-input" name="comment" rows="8">
+              </textarea>
+            </label>
+          </fieldset>
+          <fieldset class="form-group">
+            <label class="form-group-checkbox">
+              <input class="form-input-checkbox" type="checkbox" name="" />
+              I accept the terms and conditions of the Privacy Policy
+            </label>
+          </fieldset>
+          <button class="form-modal-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
