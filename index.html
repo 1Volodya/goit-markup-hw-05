@@ -471,60 +471,82 @@
         <p class="modal-taxt">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="form-section">
-            <label class="modal-form-label">
+            <label class="modal-form-label" for="user-name">
               Name
-              <input
-                class="modal-form-input"
-                type="text"
-                name="username"
-                placeholder=""
-              />
-              <svg class="form-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
+              <div class="box-input">
+                <input
+                  id="user-name"
+                  class="modal-form-input"
+                  type="text"
+                  name="user-name"
+                  placeholder=""
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
             </label>
             <label class="modal-form-label">
               Phone
-              <input
-                class="modal-form-input"
-                type="tel"
-                name="user-tel"
-                placeholder=""
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+              <div class="box-input">
+                <input
+                  class="modal-form-input"
+                  type="tel"
+                  name="user-tel"
+                  placeholder=""
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </label>
             <label class="modal-form-label">
               Email
+              <div class="box-input">
+                <input
+                  class="modal-form-input"
+                  type="email"
+                  name="user-email"
+                  placeholder=""
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+            <div class="comment-box">
+              <label class="modal-form-label" for="user-comment">
+                Comment
+                <div class="box-input">
+                  <textarea
+                    id="user-comment"
+                    class="modal-form-input taxtarea"
+                    name="user-comment"
+                    placeholder="Text input"
+                  >
+                  </textarea>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox-box">
               <input
-                class="modal-form-input"
-                type="email"
-                name="user-email"
-                placeholder=""
+                class="checkbox-section-input visually-hidden"
+                id="user-privacy"
+                type="checkbox"
+                value="true"
+                name="user-privacy"
               />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </label>
-            <label class="modal-form-label">
-              Comment
-              <textarea
-                class="modal-form-input taxtarea"
-                name="user-coment"
-                placeholder="Text input"
-              >
-              </textarea>
-            </label>
 
-            <label class="checkbox-section">
-              <input class="checkbox-section-input" type="checkbox" />
-              <svg class="form-icon-checkbox" width="16" height="16">
-                <use href="./images/icons.svg#icon-Property"></use>
-              </svg>
-              I accept the terms and conditions of the
-              <span class="color-accent-form">Privacy Policy</span>
-            </label>
+              <label for="user-privacy" class="checkbox-section">
+                I accept the terms and conditions of the
+                <span class="color-accent-form">
+                  <svg class="form-icon-checkbox" width="10" height="8">
+                    <use href="./images/icons.svg#icon-Property"></use>
+                  </svg>
+                </span>
+                <a href="" class="modal-link">Privacy Policy</a>
+              </label>
+            </div>
 
             <button class="form-modal-button" type="submit">Send</button>
           </div>
