@@ -731,6 +731,7 @@ img {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+  cursor: pointer;
 }
 .checbox-icon {
 }
@@ -741,9 +742,7 @@ img {
 }
 .form-checbox-input:hover + .form-checbox-label .checbox-span,
 .form-checbox-input:focus + .form-checbox-label .checbox-span  {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
+  outline: 1px solid #000;
 }
 .checbox-link {
   color: #4d5ae5;
