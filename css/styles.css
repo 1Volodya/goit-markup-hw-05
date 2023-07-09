@@ -740,7 +740,7 @@ img {
   border: none;
   fill: #f4f4fd;
 }
-.form-checbox-input:hover + .form-checbox-label .checbox-span,
+
 .form-checbox-input:focus + .form-checbox-label .checbox-span  {
   outline: 1px solid #000;
 }
